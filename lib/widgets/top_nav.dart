@@ -6,7 +6,7 @@ import 'package:web_one/widgets/custom_text.dart';
 AppBar topNavBar(context, GlobalKey<ScaffoldState> key) =>
   AppBar(
     backgroundColor: light,
-    elevation: 1,
+    elevation: 3,
     shadowColor: Colors.blue[300],
     iconTheme: IconThemeData(
       color: dark.withOpacity(.7),
