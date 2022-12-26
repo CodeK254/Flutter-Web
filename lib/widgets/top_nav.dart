@@ -5,7 +5,7 @@ import 'package:web_one/widgets/custom_text.dart';
 
 AppBar topNavBar(context, GlobalKey<ScaffoldState> key) =>
   AppBar(
-    backgroundColor: Colors.white,
+    backgroundColor: light,
     elevation: 1,
     shadowColor: Colors.blue[300],
     iconTheme: IconThemeData(
@@ -76,10 +76,6 @@ AppBar topNavBar(context, GlobalKey<ScaffoldState> key) =>
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
-            border:  Border.all(
-              color: active.withOpacity(.7),
-              width: 1,
-            )
           ),
           child: Container(
             padding: const EdgeInsets.all(2),

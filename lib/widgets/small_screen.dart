@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_one/helpers/local_navigator.dart';
 
 class SmallScreen extends StatelessWidget {
   const SmallScreen({super.key});
@@ -6,10 +7,7 @@ class SmallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        constraints: const BoxConstraints.expand(),
-        color: Colors.teal,
-      ),
+      body: localNavigator(),
     );
   }
 }
