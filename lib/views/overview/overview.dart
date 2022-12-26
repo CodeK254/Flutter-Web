@@ -7,6 +7,7 @@ import 'package:web_one/views/overview/widgets/overview_cards_large_screen.dart'
 import 'package:web_one/views/overview/widgets/overview_cards_medium_screen.dart';
 import 'package:web_one/views/overview/widgets/overview_cards_small_screen.dart';
 import 'package:web_one/views/overview/widgets/revenue_section_large_screen.dart';
+import 'package:web_one/views/overview/widgets/revenue_section_small_screen.dart';
 import 'package:web_one/widgets/custom_text.dart';
 
 class OverviewPage extends StatelessWidget {
@@ -45,7 +46,10 @@ class OverviewPage extends StatelessWidget {
                 else
                   OverviewCardsSmallScreen(),
                 
-                RevenueSectionLargeScreen(),
+                if(ResponsiveWidget.isLargeScreen(context))
+                  RevenueSectionLargeScreen()
+                else
+                  RevenueSectionSmallScreen()
               ],
             ),
           ),
