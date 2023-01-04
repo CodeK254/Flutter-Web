@@ -48,7 +48,7 @@ class RevenueSectionSmallScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 15),
             child: Container(
-              width: 120,
+              width: MediaQuery.of(context).size.width * 0.8,
               height: 1,
               color: lightGrey,
             ),
